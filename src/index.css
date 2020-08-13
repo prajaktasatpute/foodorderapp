@@ -1,13 +1,198 @@
-body {
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body,
+#root{
+  height: 100vh;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+body, input, select, button, textarea{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.grid-container{
+  display: grid;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+  grid-template-rows: 5rem 1fr 5rem;
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+}
+header{
+  grid-area: header;
+  background-color: orangered;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+header a{
+  color:darkgreen;
+  text-decoration: none;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
+  background-color: orangered;
+  color:green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.main{
+  flex: 3 60rem;
+}
+.sidebar{
+  flex: 1 20rem;
+}
+
+
+.menus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.menus li{
+  flex: 0 1 29rem;
+  height: 35rem;
+  padding: 1rem;
+  
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.menu img{
+ max-width: 35rem;
+ max-height: 35rem;
+}
+.menu-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-price div,
+.menu-price button{
+  text-align: center;
+  flex:1;
+}
+.menu-price div{
+  font-size: 2rem;
+}
+.button{
+  padding: 1rem;
+  border:.1rem black solid;
+  background-color: orangered;
+  cursor: pointer;
+}
+.button:hover{
+  border:.1rem green solid;
+}
+.button.primary{
+  background-color: orangered;
+}
+
+.filter{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: .1rem #c0c0c0 solid;
+}
+.filter div{
+  flex: 1;
+}
+
+.cart{
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+.cart-header{
+  border-bottom: .1rem #c0c0c0 solid;
+}
+
+.cart-items{
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img{
+  width: 5rem;
+}
+.cart-items li{
+  display: flex;
+}
+.cart-items li div{
+  padding:  .5rem;
+}
+.cart-items li div:last-child{
+  flex: 1;
+}
+.right{
+  text-align: right;
+}
+
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total > div{
+  font-size: 2rem;
+}
+.total > div,
+.total > button{
+    flex: 1;
+}
+form{
+  width: 100%;
+}
+
+.form-container{
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+.form-container li{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+input{
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+}
+
+.menu-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 85vh;
 }
