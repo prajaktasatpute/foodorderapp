@@ -10,6 +10,7 @@ body,
 body, input, select, button, textarea{
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
 }
 
 .grid-container{
@@ -74,8 +75,8 @@ footer{
 }
 .menus li{
   flex: 0 1 29rem;
-  height: 35rem;
-  padding: 1rem;
+  height: 27rem;
+  padding: 2rem;
   
 }
 .menu{
@@ -190,9 +191,27 @@ input{
   border: .1rem #c0c0c0 solid;
 }
 
+/* menu details */
+
 .menu-details{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-height: 85vh;
 }
+/* .menu-details img{
+  max-height: 100vh;
+  max-width: 46rem;
+  margin: 0 auto;
+} */
+.menu-details-description{
+  flex: 1 1;
+  margin: 1rem;
+}
+.close-modal{
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  /* z-index: 1000; */
+}
+

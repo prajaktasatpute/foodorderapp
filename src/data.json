@@ -3,7 +3,7 @@
         {
             "_id":"menu1",
             "title":"ChocoCake",
-            "image":"/images/cake6.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":25
@@ -11,7 +11,7 @@
         {
             "_id":"menu2",
             "title":"Pancake",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple", "Pancake"],
             "price":50.70
@@ -19,7 +19,7 @@
         {
             "_id":"menu3",
             "title":"Stawberry",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":50.70
@@ -27,7 +27,7 @@
         {
             "_id":"menu4",
             "title":"pinapple",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["pinapple","stawberry", "Pancake"],
             "price":50.70
@@ -35,7 +35,7 @@
         {
             "_id":"menu5",
             "title":"stawberryCake",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":50.70
@@ -43,7 +43,7 @@
         {
             "_id":"menu6",
             "title":"mango",
-            "image":"/images/cake5.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":50.70
@@ -51,7 +51,7 @@
         {
             "_id":"menu7",
             "title":"Pancake",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":45.00
@@ -59,7 +59,7 @@
         {
             "_id":"menu8",
             "title":"Pancake",
-            "image":"/images/cake6.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":45.00
@@ -67,7 +67,7 @@
         {
             "_id":"menu9",
             "title":"ChocoCake",
-            "image":"/images/cake3.jpg",
+            "image":"/images/m1.jpg",
             "description":"about cake",
             "availableflavour":["mango","ChocoCake","pinapple","stawberry", "Pancake"],
             "price":30.50

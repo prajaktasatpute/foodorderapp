@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import formatCurrency from "./util";
+import formatCurrency from "../util";
 import Fade from 'react-reveal/Fade';
 import Modal from 'react-modal';
 import Zoom from 'react-reveal/Zoom';
@@ -37,7 +37,7 @@ export default class Menus extends Component {
                                         {formatCurrency(menu.price)}
                                     </div>
                                     <button onClick={()=> this.props.addToCart(menu)} className="button primary">
-                                        Add to Cart
+                                        Order
                                     </button>
                                 </div>
                             </div>
@@ -53,7 +53,29 @@ export default class Menus extends Component {
                                 <button className="close-modal" onClick={this.closeModal}>x</button>
                                 <div className="menu-details">
                                     <img src={menu.image} alt={menu.title}></img>
-                                    <div className="menu-details-description"></div>
+                                    <div className="menu-details-description">
+                                        <p>
+                <strong>{menu.title}</strong>
+                                        </p>
+                                        <p>
+                                            {menu.description}
+                                        </p>
+                                        <p>
+                                            AvailableCusines{" "}
+                                            {menu.availableflavour.map(x=>(
+                                                <span>{" "} <button className="button">{x}</button></span>
+                                            ))}
+                                        </p>
+                                        <div className="menu-price">
+                                            <div>
+                                                {formatCurrency(menu.price)}
+                                            </div>
+                                            <button className="button primary" onClick={()=>{
+                                                this.props.addToCart(menu);
+                                                // this.closeModal();
+                                            }}>Order</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </Zoom>
 
